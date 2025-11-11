@@ -55,19 +55,19 @@ class EngineeringTeam():
     @task
     def code_task(self) -> Task:
         return Task(
-            config=self.tasks_config['code_task'],
+            config=self.tasks_config['code_task']
         )
 
     @task
     def frontend_task(self) -> Task:
         return Task(
-            config=self.tasks_config['frontend_task'],
+            config=self.tasks_config['frontend_task']
         )
 
     @task
     def test_task(self) -> Task:
         return Task(
-            config=self.tasks_config['test_task'],
+            config=self.tasks_config['test_task']
         )   
 
     @crew
@@ -77,5 +77,5 @@ class EngineeringTeam():
             agents=self.agents,
             tasks=self.tasks,
             process=Process.sequential,
-            verbose=True,
+            verbose=True
         )
